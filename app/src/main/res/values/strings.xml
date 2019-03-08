@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SmartKitchenSafety</string>
+    <string name="time">Time :</string>
+    <string name="gas_status">Gas Status</string>
+    <string name="todo">TODO</string>
+    <string name="user_name">User Name</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="just_enter_registered_email_id_to_sent_you_password_reset_instructions">Just enter registered Email Id to sent you password reset instructions.</string>
+    <string name="email">Email</string>
+    <string name="reset">Reset</string>
+    <string name="password">password</string>
+    <string name="enter_your_registered_email">Enter your registered email</string>
+    <string name="not_a_member_get_registered_now">Not a member? Get registered now.</string>
+    <string name="sign_in">Sign In</string>
+    <string name="back"><![CDATA[<< BACK]]></string>
+    <string name="sign_out">Sign Out</string>
+    <string name="enter_your_email_address">Enter your email address</string>
+    <string name="registration">Registration</string>
+    <string name="already_registered_login_me">Already Registered.Login Me</string>
+    <string name="real_time_gas_status">Real Time Gas Status</string>
+</resources>

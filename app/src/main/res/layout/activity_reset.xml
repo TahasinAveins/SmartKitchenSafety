@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reset">
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="115dp"
+        android:layout_marginLeft="115dp"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginRight="115dp"
+        android:background="#E780AE"
+        android:padding="10dp"
+        android:text="@string/forgot_password"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpUsage" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#A5CFB7"
+        android:gravity="center_horizontal"
+        android:text="@string/just_enter_registered_email_id_to_sent_you_password_reset_instructions"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        android:autofillHints="" tools:targetApi="o"/>
+
+
+    <!-- Login Button -->
+
+    <Button
+        android:id="@+id/btn_reset_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:layout_marginBottom="51dp"
+        android:background="@color/colorAccent"
+        android:text="@string/reset"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btn_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginLeft="161dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginRight="161dp"
+        android:layout_marginBottom="200dp"
+        android:background="@null"
+        android:text="@string/back"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_reset_password" />
+
+
+</android.support.constraint.ConstraintLayout>

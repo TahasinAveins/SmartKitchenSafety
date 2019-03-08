@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "173177843057",
+    "firebase_url": "https://smartkitchensafty.firebaseio.com",
+    "project_id": "smartkitchensafty",
+    "storage_bucket": "smartkitchensafty.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173177843057:android:91d2365b94efc64f",
+        "android_client_info": {
+          "package_name": "com.example.smartkitchensafty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "173177843057-9i9pute07q6hq11vbphn33quo6j38oh3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.smartkitchensafty",
+            "certificate_hash": "c79fc2f633ccf193a1ac15ff3aed6dc5e779c369"
+          }
+        },
+        {
+          "client_id": "173177843057-cjfjflbfmqpaf1d4vfchbiob05n3o2kp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHGAcQWf6yLrZsSuYjzX0dmeBS8XMdkV4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "173177843057-cjfjflbfmqpaf1d4vfchbiob05n3o2kp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
