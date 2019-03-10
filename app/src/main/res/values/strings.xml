@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SmartKitchenSafety</string>
+    <string name="app_name">Safety Guard</string>
     <string name="time">Time :</string>
     <string name="gas_status">Gas Status</string>
     <string name="todo">TODO</string>

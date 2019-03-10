@@ -20,7 +20,7 @@
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/kitchentitle"
+        app:srcCompat="@drawable/safety"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="53dp" />
 
