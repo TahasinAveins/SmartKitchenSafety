@@ -18,4 +18,8 @@
     <string name="registration">Registration</string>
     <string name="already_registered_login_me">Already Registered.Login Me</string>
     <string name="real_time_gas_status">Real Time Gas Status</string>
+    <string name="see_your_gas_status">See Your Gas Status</string>
+    <string name="unsafe">Unsafe</string>
+    <string name="safe">Safe</string>
+    <string name="uback"><![CDATA[<<]]></string>
 </resources>

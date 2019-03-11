@@ -35,7 +35,7 @@ public class Login extends AppCompatActivity {
         if(user != null)
         {
             finish();
-            startActivity(new Intent(Login.this,MainActivity.class));
+            startActivity(new Intent(Login.this,Main2Activity.class));
         }
 
         setupViewsIdLogIn();
