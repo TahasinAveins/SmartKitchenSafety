@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -29,12 +31,13 @@ import java.net.URL;
 
 public class MainActivity extends AppCompatActivity {
 
-    String url_Address = "http://www.iotkingdom.tk/login.php";
+    String url_Address = "http://iot.uysys.net/app/fg.php";
     String[] gas_ms;
     String[] time_ms;
 
 
     ListView listView;
+    Button back_BTN;
 
     BufferedInputStream is;
     String line= null;
@@ -43,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
 
     private FirebaseAuth auth;
     private FirebaseDatabase firebaseDatabase;
-    private TextView userNameView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,26 +62,14 @@ public class MainActivity extends AppCompatActivity {
         CustomListView customListView = new CustomListView(this,gas_ms,time_ms);
         listView.setAdapter(customListView);
 
-        auth = FirebaseAuth.getInstance();
-        userNameView = (TextView)findViewById(R.id.userNameView);
+        back_BTN = (Button)findViewById(R.id.back);
 
-        firebaseDatabase = FirebaseDatabase.getInstance();
 
-        DatabaseReference databaseReference = firebaseDatabase.getReference(auth.getUid());
-
-        databaseReference.addValueEventListener(new ValueEventListener() {
+        back_BTN.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-
-                UserProfile userProfile = dataSnapshot.getValue(UserProfile.class);
-
-                userNameView.setText("Welcome " + userProfile.getNameUser());
-
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-                Toast.makeText(MainActivity.this, databaseError.getCode(), Toast.LENGTH_SHORT).show();
+            public void onClick(View v) {
+                finish();
+                startActivity(new Intent(MainActivity.this,Main2Activity.class));
             }
         });
 
@@ -127,8 +117,8 @@ public class MainActivity extends AppCompatActivity {
 
             for (i=0;i<=ja.length();i++){
                 jo = ja.getJSONObject(i);
-                gas_ms[i] = jo.getString("GAS");
-                time_ms[i] = jo.getString("TIME");
+                gas_ms[i] = jo.getString("gas");
+                time_ms[i] = jo.getString("date_time");
             }
 
         }catch (Exception ex)
@@ -138,25 +128,4 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu,menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
-
-
-            case(R.id.settingID):
-            {
-                auth.signOut();
-                Intent intent = new  Intent(MainActivity.this,Login.class);
-                startActivity(intent);
-            }
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 }

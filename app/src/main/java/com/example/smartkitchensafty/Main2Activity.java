@@ -36,7 +36,7 @@ public class Main2Activity extends AppCompatActivity {
     RequestQueue rq;
     Button state;
 
-    String url_address = "http://www.iotkingdom.tk/safetyguad.php";
+    String url_address = "http://iot.uysys.net/app/fg1.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -126,6 +126,13 @@ public class Main2Activity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
+
+
+            case(R.id.history):
+            {
+                Intent intent = new  Intent(Main2Activity.this,MainActivity.class);
+                startActivity(intent);
+            }
 
 
             case(R.id.settingID):
